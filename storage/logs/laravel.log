@@ -1,0 +1,33 @@
+[2021-09-28 16:44:25] production.ERROR: There are no commands defined in the "generate" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"generate\" namespace. at D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php:574)
+[stacktrace]
+#0 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('generate')
+#1 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('generate:key')
+#2 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 D:\\AndroidProject\\sistem-kasir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2021-09-28 16:44:32] production.ERROR: file_get_contents(D:\AndroidProject\sistem-kasir\.env): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(D:\\AndroidProject\\sistem-kasir\\.env): failed to open stream: No such file or directory at D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php:96)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_get_conten...', 'D:\\\\AndroidProje...', 96, Array)
+#1 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(96): file_get_contents('D:\\\\AndroidProje...')
+#2 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(80): Illuminate\\Foundation\\Console\\KeyGenerateCommand->writeNewEnvironmentFileWith('base64:Ni81J1WG...')
+#3 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(45): Illuminate\\Foundation\\Console\\KeyGenerateCommand->setKeyInEnvironmentFile('base64:Ni81J1WG...')
+#4 [internal function]: Illuminate\\Foundation\\Console\\KeyGenerateCommand->handle()
+#5 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): call_user_func_array(Array, Array)
+#6 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#11 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Command\\Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\KeyGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\AndroidProject\\sistem-kasir\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 D:\\AndroidProject\\sistem-kasir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 D:\\AndroidProject\\sistem-kasir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
